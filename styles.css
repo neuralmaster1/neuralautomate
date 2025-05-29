@@ -1,7 +1,7 @@
 :root {
-    /* Updated color palette based on green Figma design */
-    --primary-color: #2ECB6D; /* Green primary */
-    --primary-dark: #20A656; /* Darker shade of green */
+    /* Updated color palette based on Figma design */
+    --primary-color: #4CAF4F; /* Green primary matching Figma */
+    --primary-dark: #3A9D3B; /* Darker shade of green */
     --accent-color: #6C63FF; /* Purple accent */
     --success-color: #10B981; /* Keeping green */
     --error-color: #EF4444; /* Keeping red */
@@ -11,13 +11,13 @@
     --section-bg: #FFFFFF; /* White */
     
     /* Enhanced shadows with green tint */
-    --shadow-sm: 0 1px 3px rgba(46, 203, 109, 0.08), 0 1px 2px -1px rgba(46, 203, 109, 0.08);
-    --shadow-md: 0 4px 12px -1px rgba(46, 203, 109, 0.10), 0 2px 4px -2px rgba(46, 203, 109, 0.07);
-    --shadow-lg: 0 10px 24px -3px rgba(46, 203, 109, 0.13), 0 4px 6px -4px rgba(46, 203, 109, 0.10);
+    --shadow-sm: 0 1px 3px rgba(76, 175, 79, 0.08), 0 1px 2px -1px rgba(76, 175, 79, 0.08);
+    --shadow-md: 0 4px 8px -1px rgba(76, 175, 79, 0.10), 0 2px 4px -2px rgba(76, 175, 79, 0.07);
+    --shadow-lg: 0 10px 24px -3px rgba(76, 175, 79, 0.13), 0 4px 6px -4px rgba(76, 175, 79, 0.10);
     
     /* Updated gradients */
-    --gradient-primary: linear-gradient(135deg, #2ECB6D 0%, #6C63FF 100%);
-    --gradient-hover: linear-gradient(135deg, #20A656 0%, #5853E5 100%);
+    --gradient-primary: linear-gradient(135deg, #4CAF4F 0%, #6C63FF 100%);
+    --gradient-hover: linear-gradient(135deg, #3A9D3B 0%, #5853E5 100%);
     
     /* Consistent spacing and sizing */
     --border-radius: 12px;
@@ -228,13 +228,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Updated Button Styles */
 .cta-button {
-    background: var(--primary-color);
+    background: #4CAF4F;
     color: white;
     border: none;
-    padding: 0.9rem 1.8rem;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: 1rem;
+    padding: 10px 22px;
+    border-radius: 2.8px;
+    font-weight: 500;
+    font-size: 16px;
     cursor: pointer;
     transition: all var(--transition-speed) ease;
     box-shadow: var(--shadow-md);
@@ -242,10 +242,10 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 8px;
     position: relative;
     overflow: hidden;
-    font-family: 'Manrope', sans-serif; /* Ensure buttons use Manrope */
+    font-family: 'Inter', 'Manrope', sans-serif;
 }
 
 .cta-button:hover {
@@ -256,6 +256,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .cta-button:active {
     transform: translateY(0);
+}
+
+/* Add this for the arrow icon that will be added to buttons */
+.cta-button::after {
+    content: "→";
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.cta-button:hover::after {
+    transform: translateX(3px);
 }
 
 /* Updated Services Section */
@@ -695,7 +708,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(46, 203, 109, 0.1);
+    box-shadow: 0 0 0 3px rgba(76, 175, 79, 0.1);
 }
 
 .form-group input:focus ~ label,
@@ -955,7 +968,7 @@ p {
 }
 .cta-button:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(46, 203, 109, 0.15);
+    box-shadow: 0 0 0 4px rgba(76, 175, 79, 0.15);
     background: var(--gradient-hover);
     transition: background 0.2s, box-shadow 0.2s;
 }
@@ -963,7 +976,7 @@ p {
 .form-group textarea:focus {
     background: #f0f4ff;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 4px rgba(46, 203, 109, 0.10);
+    box-shadow: 0 0 0 4px rgba(76, 175, 79, 0.10);
 }
 .fade-in {
     opacity: 0;
@@ -1098,7 +1111,7 @@ p {
 .shape-blur-1 {
     width: 300px;
     height: 300px;
-    background: rgba(46, 203, 109, 0.3);
+    background: rgba(76, 175, 79, 0.3);
     top: 10%;
     left: 5%;
     animation: floatBlur 8s ease-in-out infinite alternate;
@@ -1144,7 +1157,7 @@ p {
 
 /* Updated service cards */
 .service-icon {
-    background: rgba(46, 203, 109, 0.05);
+    background: rgba(76, 175, 79, 0.05);
     width: 70px;
     height: 70px;
     border-radius: 12px;
@@ -1156,7 +1169,7 @@ p {
 }
 
 .service-card:hover .service-icon {
-    background: rgba(46, 203, 109, 0.1);
+    background: rgba(76, 175, 79, 0.1);
     transform: scale(1.1);
 }
 
@@ -1209,7 +1222,7 @@ p {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(46, 203, 109, 0.1);
+    box-shadow: 0 0 0 3px rgba(76, 175, 79, 0.1);
 }
 
 /* Enhanced card hover effects */
@@ -1219,7 +1232,7 @@ p {
 .step-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(46, 203, 109, 0.1);
+    border-color: rgba(76, 175, 79, 0.1);
 }
 
 /* Responsive improvements */
