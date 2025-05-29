@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NeuralAutomate - Professional automation solutions for your business workflows">
-    <meta name="theme-color" content="#2B6CB0">
+    <meta name="theme-color" content="#2ECB6D">
     <title>NeuralAutomate | Business Process Automation Experts</title>
     
     <!-- Preload fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css?v=1.2">
+    <link rel="stylesheet" href="styles.css?v=1.5">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h2>Neural<br>Automate</h2>
+                <h2>Neural<span>Automate</span></h2>
             </div>
             <button class="mobile-menu-btn" aria-label="Open navigation menu" style="display:none;" tabindex="0">
                 <span aria-hidden="true">&#9776;</span>
@@ -38,6 +38,8 @@
     <section class="hero" id="home">
         <!-- Animated gradient/floating shapes background -->
         <div class="hero-bg-animated">
+            <div class="shape-blur shape-blur-1"></div>
+            <div class="shape-blur shape-blur-2"></div>
             <svg class="floating-shape" data-parallax="0.5" width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="110" cy="110" rx="90" ry="60" fill="url(#grad1)" opacity="0.18">
                     <animate attributeName="rx" values="90;100;90" dur="6s" repeatCount="indefinite" />
@@ -45,8 +47,8 @@
                 </ellipse>
                 <defs>
                     <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#6366F1" />
-                        <stop offset="100%" stop-color="#F59E42" />
+                        <stop offset="0%" stop-color="#2ECB6D" />
+                        <stop offset="100%" stop-color="#6C63FF" />
                     </linearGradient>
                 </defs>
             </svg>
@@ -56,30 +58,21 @@
                 </circle>
                 <defs>
                     <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#F59E42" />
-                        <stop offset="100%" stop-color="#6366F1" />
-                    </linearGradient>
-                </defs>
-            </svg>
-            <svg class="floating-shape3" data-parallax="0.7" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10" y="10" width="60" height="60" rx="18" fill="url(#grad3)" opacity="0.13">
-                    <animate attributeName="rx" values="18;28;18" dur="9s" repeatCount="indefinite" />
-                </rect>
-                <defs>
-                    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#6366F1" />
-                        <stop offset="100%" stop-color="#F59E42" />
+                        <stop offset="0%" stop-color="#6C63FF" />
+                        <stop offset="100%" stop-color="#2ECB6D" />
                     </linearGradient>
                 </defs>
             </svg>
         </div>
         <div class="hero-content">
             <div class="hero-text">
+                <h1>Automate Your Business <span>Processes</span></h1>
+                <p class="hero-subtitle">Scale your operations with intelligent automation solutions</p>
                 <div class="checkmarks">
-                    <p>✓ Scale up your system process</p>
-                    <p>✓ Integrate all your tools</p>
-                    <p>✓ It's easier & faster than you think</p>
-                    <p>✓ Business process audit</p>
+                    <p>Scale up your system process</p>
+                    <p>Integrate all your tools</p>
+                    <p>It's easier & faster than you think</p>
+                    <p>Business process audit</p>
                 </div>
                 <div class="hero-cta">
                     <a href="mailto:im@neuralautomate.xyz" class="cta-button">Free Consultation</a>
@@ -96,8 +89,8 @@
 
     <!-- SVG Wave Divider -->
     <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6366F1" opacity="0.07"/></svg>
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
+        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6C63FF" opacity="0.06"/></svg>
     </div>
 
     <!-- Services Section -->
@@ -105,17 +98,23 @@
         <h2>Our NeuralAutomate experts will automate your business<br>so you can scale profitably</h2>
         <div class="services-grid">
             <div class="service-card fade-in">
-                <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a2c5b6e5e826ff72a827_Link.svg" alt="Apps Integration">
+                <div class="service-icon">
+                    <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a2c5b6e5e826ff72a827_Link.svg" alt="Apps Integration">
+                </div>
                 <h3>Bring your apps together</h3>
                 <p>NeuralAutomate provides a tool to connect all your business apps and automate workflows</p>
             </div>
             <div class="service-card fade-in">
-                <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a30054e58a6201b723df_Settings.svg" alt="Manual Work">
+                <div class="service-icon">
+                    <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a30054e58a6201b723df_Settings.svg" alt="Manual Work">
+                </div>
                 <h3>Automate manual work</h3>
                 <p>Save time and reduce errors by automating repetitive tasks and processes</p>
             </div>
             <div class="service-card fade-in">
-                <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a350ec74b78e8347c602_Laptop%20Smiley.svg" alt="Solve Inefficiencies">
+                <div class="service-icon">
+                    <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a350ec74b78e8347c602_Laptop%20Smiley.svg" alt="Solve Inefficiencies">
+                </div>
                 <h3>Solve inefficiencies</h3>
                 <p>Identify and eliminate bottlenecks in your workflow processes</p>
             </div>
@@ -124,8 +123,8 @@
 
     <!-- SVG Wave Divider -->
     <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F4F6FB"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#F59E42" opacity="0.06"/></svg>
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
+        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6C63FF" opacity="0.06"/></svg>
     </div>
 
     <!-- How it Works Section -->
@@ -159,7 +158,7 @@
     <!-- SVG Wave Divider -->
     <div class="section-divider">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6366F1" opacity="0.07"/></svg>
+        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#2ECB6D" opacity="0.07"/></svg>
     </div>
 
     <!-- Use Cases Section -->
@@ -258,8 +257,8 @@
 
     <!-- SVG Wave Divider -->
     <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F4F6FB"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#F59E42" opacity="0.06"/></svg>
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
+        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6C63FF" opacity="0.06"/></svg>
     </div>
 
     <!-- Portfolio Section -->
@@ -364,7 +363,7 @@
     <!-- SVG Wave Divider -->
     <div class="section-divider">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6366F1" opacity="0.07"/></svg>
+        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#2ECB6D" opacity="0.07"/></svg>
     </div>
 
     <!-- Contact Section -->
@@ -395,15 +394,15 @@
 
     <!-- SVG Wave Divider -->
     <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F4F6FB"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#F59E42" opacity="0.06"/></svg>
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
+        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#6C63FF" opacity="0.06"/></svg>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3>NeuralAutomate</h3>
+                <h3>Neural<span>Automate</span></h3>
                 <nav class="footer-nav">
                     <a href="#home">Home</a>
                     <a href="#services">Services</a>
