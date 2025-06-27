@@ -13,10 +13,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css?v=1.6">
+    <meta property="og:title" content="NeuralAutomate | Business Process Automation Experts">
+    <meta property="og:description" content="Professional automation solutions for your business workflows">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neuralautomate.xyz/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NeuralAutomate | Business Process Automation Experts">
+    <meta name="twitter:description" content="Professional automation solutions for your business workflows">
+    <meta name="twitter:image" content="/og-image.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>
+        /* Critical CSS: Navbar + Hero */
+        .navbar {
+            position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.98); z-index: 1000; box-shadow: 0 1px 3px rgba(76,175,79,0.08);
+        }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo h2 { font-size: 1.75rem; color: #4CAF4F; font-weight: 800; }
+        .nav-links a { color: #222831; margin: 0 1.5rem; font-weight: 600; text-decoration: none; }
+        .hero { padding: 10rem 2rem 6rem; background: linear-gradient(170deg, #F9FAFC 0%, #fff 100%); }
+        .hero-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .hero-text h1 { font-size: clamp(2.4rem, 2rem + 4vw, 4.8rem); line-height: 1.2; font-weight: 800; color: #222831; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main Navigation">
         <div class="nav-container">
             <div class="logo">
                 <h2>Neural<span>Automate</span></h2>
@@ -77,12 +99,20 @@
                 <div class="hero-cta">
                     <a href="mailto:im@neuralautomate.xyz" class="cta-button">Free Consultation</a>
                     <div class="badge">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png" alt="Make Gold Partner Badge">
+                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png" alt="Make Gold Partner Badge" loading="lazy" width="140" height="40" srcset="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png 1x, https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png 2x">
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png" alt="Laptop with automation illustration">
+                <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png" alt="Laptop with automation illustration" loading="lazy" width="400" height="300" srcset="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png 1x, https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png 2x">
+            </div>
+        </div>
+        <div class="logos-bar">
+            <div class="logos">
+                <img src="/logo1.png" alt="Client 1" loading="lazy" width="100" height="40">
+                <img src="/logo2.png" alt="Client 2" loading="lazy" width="100" height="40">
+                <img src="/logo3.png" alt="Client 3" loading="lazy" width="100" height="40">
+                <img src="/logo4.png" alt="Client 4" loading="lazy" width="100" height="40">
             </div>
         </div>
     </section>
@@ -416,121 +446,6 @@
             <p>&copy; 2025 NeuralAutomate. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        // Form handling
-        const form = document.querySelector('.contact-form');
-        const submitButton = form.querySelector('button[type="submit"]');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            // Show loading state
-            submitButton.classList.add('loading');
-            submitButton.disabled = true;
-
-            try {
-                const formData = new FormData(form);
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (response.ok) {
-                    // Show success message
-                    const successMessage = document.createElement('div');
-                    successMessage.className = 'success-message';
-                    successMessage.innerHTML = '✓ Thank you! We\'ll be in touch soon.';
-                    form.appendChild(successMessage);
-                    form.reset();
-
-                    // Remove success message after 5 seconds
-                    setTimeout(() => {
-                        successMessage.remove();
-                    }, 5000);
-                } else {
-                    throw new Error('Form submission failed');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Something went wrong. Please try again.');
-            } finally {
-                // Reset button state
-                submitButton.classList.remove('loading');
-                submitButton.disabled = false;
-            }
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Navbar scroll behavior
-        const navbar = document.querySelector('.navbar');
-        let lastScroll = 0;
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll <= 0) {
-                navbar.style.boxShadow = 'var(--shadow-sm)';
-                return;
-            }
-
-            if (currentScroll > lastScroll) {
-                // Scrolling down
-                navbar.style.transform = 'translateY(-100%)';
-            } else {
-                // Scrolling up
-                navbar.style.transform = 'translateY(0)';
-                navbar.style.boxShadow = 'var(--shadow-md)';
-            }
-
-            lastScroll = currentScroll;
-        });
-
-        // Subtle parallax for hero floating shapes
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            document.querySelectorAll('.hero-bg-animated [data-parallax]').forEach(el => {
-                const factor = parseFloat(el.getAttribute('data-parallax')) || 0.5;
-                el.style.transform = `translateY(${scrollY * factor * 0.15}px)`;
-            });
-        });
-
-        // Fade-in animation for cards on scroll
-        const fadeEls = document.querySelectorAll('.fade-in');
-        const fadeInObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.15 });
-        fadeEls.forEach(el => fadeInObserver.observe(el));
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-        function toggleMenu() {
-            navLinks.classList.toggle('active');
-        }
-        if (mobileMenuBtn) {
-            mobileMenuBtn.style.display = 'block';
-            mobileMenuBtn.addEventListener('click', toggleMenu);
-        }
-        // Close menu on link click (mobile)
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) navLinks.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="script.js?v=1.0" defer></script>
 </body>
 </html> 
