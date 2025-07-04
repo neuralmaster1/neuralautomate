@@ -4,556 +4,508 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="NeuralAutomate - Professional automation solutions for your business workflows">
-    <meta name="theme-color" content="#4CAF4F">
+    <meta name="theme-color" content="#000000">
     <title>NeuralAutomate | Business Process Automation Experts</title>
     
     <!-- Preload fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css?v=1.6">
+    <link rel="stylesheet" href="styles.css">
     <meta property="og:title" content="NeuralAutomate | Business Process Automation Experts">
     <meta property="og:description" content="Professional automation solutions for your business workflows">
-    <meta property="og:image" content="/og-image.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://neuralautomate.xyz/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NeuralAutomate | Business Process Automation Experts">
-    <meta name="twitter:description" content="Professional automation solutions for your business workflows">
-    <meta name="twitter:image" content="/og-image.png">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <style>
-        /* Critical CSS: Navbar + Hero */
-        .navbar {
-            position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.98); z-index: 1000; box-shadow: 0 1px 3px rgba(76,175,79,0.08);
-        }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo h2 { font-size: 1.75rem; color: #4CAF4F; font-weight: 800; }
-        .nav-links a { color: #222831; margin: 0 1.5rem; font-weight: 600; text-decoration: none; }
-        .hero { padding: 10rem 2rem 6rem; background: linear-gradient(170deg, #F9FAFC 0%, #fff 100%); }
-        .hero-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-        .hero-text h1 { font-size: clamp(2.4rem, 2rem + 4vw, 4.8rem); line-height: 1.2; font-weight: 800; color: #222831; }
-    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" aria-label="Main Navigation">
-        <div class="nav-container">
+    <header class="header">
+        <div class="container">
             <div class="logo">
-                <h2>Neural<span>Automate</span></h2>
+                <h1>Neural<span>Automate</span></h1>
             </div>
-            <button class="mobile-menu-btn" aria-label="Open navigation menu" style="display:none;" tabindex="0">
-                <span aria-hidden="true">&#9776;</span>
-            </button>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#about">About Us</a>
-                <a href="#use-cases">Use Cases</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-                <a href="mailto:im@neuralautomate.xyz" class="cta-button">Book a Call</a>
-            </div>
+            <nav class="nav-menu">
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#use-cases">Use Cases</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <!-- Animated gradient/floating shapes background -->
-        <div class="hero-bg-animated">
-            <div class="shape-blur shape-blur-1"></div>
-            <div class="shape-blur shape-blur-2"></div>
-            <svg class="floating-shape" data-parallax="0.5" width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="110" cy="110" rx="90" ry="60" fill="url(#grad1)" opacity="0.18">
-                    <animate attributeName="rx" values="90;100;90" dur="6s" repeatCount="indefinite" />
-                    <animate attributeName="ry" values="60;70;60" dur="7s" repeatCount="indefinite" />
-                </ellipse>
-                <defs>
-                    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#4CAF4F" />
-                        <stop offset="100%" stop-color="#6C63FF" />
-                    </linearGradient>
-                </defs>
-            </svg>
-            <svg class="floating-shape2" data-parallax="0.3" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="60" cy="60" r="50" fill="url(#grad2)" opacity="0.12">
-                    <animate attributeName="r" values="50;60;50" dur="8s" repeatCount="indefinite" />
-                </circle>
-                <defs>
-                    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#6C63FF" />
-                        <stop offset="100%" stop-color="#4CAF4F" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Automate Your Business <span>Processes</span></h1>
-                <p class="hero-subtitle">Scale your operations with intelligent automation solutions</p>
-                <div class="checkmarks">
-                    <p>Scale up your system process</p>
-                    <p>Integrate all your tools</p>
-                    <p>It's easier & faster than you think</p>
-                    <p>Business process audit</p>
-                </div>
-                <div class="hero-cta">
-                    <a href="mailto:im@neuralautomate.xyz" class="cta-button">Free Consultation</a>
-                    <div class="badge">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png" alt="Make Gold Partner Badge" loading="lazy" width="140" height="40" srcset="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png 1x, https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6657fd7618070622ed49d743_Make_Gold_Partner_-_Axe_Automation-min.png 2x">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">NeuralAutomate</div>
+                    <h1>Automate Your Business <span>with AI-Powered Intelligence</span></h1>
+                    <p>Transform your workflows with cutting-edge automation technology that learns, adapts, and scales with your business needs.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Lightning Fast</h3>
+                                <p>Deploy automation solutions in minutes, not months</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Team Collaboration</h3>
+                                <p>Enable your team to work smarter, not harder</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Enterprise Security</h3>
+                                <p>Bank-level security with end-to-end encryption</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Start Automating</a>
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png" alt="Laptop with automation illustration" loading="lazy" width="400" height="300" srcset="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png 1x, https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64c0affd7e8881a74757078a_computer-p-800.png 2x">
-            </div>
-        </div>
-        <div class="logos-bar">
-            <div class="logos">
-                <img src="/logo1.png" alt="Client 1" loading="lazy" width="100" height="40">
-                <img src="/logo2.png" alt="Client 2" loading="lazy" width="100" height="40">
-                <img src="/logo3.png" alt="Client 3" loading="lazy" width="100" height="40">
-                <img src="/logo4.png" alt="Client 4" loading="lazy" width="100" height="40">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.06"/></svg>
-    </div>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Our NeuralAutomate experts will automate your business<br>so you can scale profitably</h2>
-        <div class="services-grid">
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a2c5b6e5e826ff72a827_Link.svg" alt="Apps Integration">
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Services</div>
+                    <h2>Transform Your Business with <span>Neural Automation</span></h2>
+                    <p>Discover our comprehensive suite of AI-powered solutions designed to revolutionize how you work, analyze data, and drive innovation.</p>
                 </div>
-                <h3>Bring your apps together</h3>
-                <p>NeuralAutomate provides a tool to connect all your business apps and automate workflows</p>
-            </div>
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a30054e58a6201b723df_Settings.svg" alt="Manual Work">
-                </div>
-                <h3>Automate manual work</h3>
-                <p>Save time and reduce errors by automating repetitive tasks and processes</p>
-            </div>
-            <div class="service-card fade-in">
-                <div class="service-icon">
-                    <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64a3a350ec74b78e8347c602_Laptop%20Smiley.svg" alt="Solve Inefficiencies">
-                </div>
-                <h3>Solve inefficiencies</h3>
-                <p>Identify and eliminate bottlenecks in your workflow processes</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.667 16H5.33366C4.96547 16 4.61233 16.1405 4.36228 16.3905C4.11223 16.6406 3.97166 16.9937 3.97166 17.3619V22.6381C3.97166 23.0063 4.11223 23.3594 4.36228 23.6095C4.61233 23.8595 4.96547 24 5.33366 24H10.667C11.0352 24 11.3883 23.8595 11.6384 23.6095C11.8884 23.3594 12.029 23.0063 12.029 22.6381V17.3619C12.029 16.9937 11.8884 16.6406 11.6384 16.3905C11.3883 16.1405 11.0352 16 10.667 16Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M26.667 16H21.3337C20.9655 16 20.6123 16.1405 20.3623 16.3905C20.1122 16.6406 19.9717 16.9937 19.9717 17.3619V22.6381C19.9717 23.0063 20.1122 23.3594 20.3623 23.6095C20.6123 23.8595 20.9655 24 21.3337 24H26.667C27.0352 24 27.3883 23.8595 27.6384 23.6095C27.8884 23.3594 28.029 23.0063 28.029 22.6381V17.3619C28.029 16.9937 27.8884 16.6406 27.6384 16.3905C27.3883 16.1405 27.0352 16 26.667 16Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M10.667 8H5.33366C4.96547 8 4.61233 8.14057 4.36228 8.39062C4.11223 8.64067 3.97166 8.99381 3.97166 9.36199V14.638C3.97166 15.0062 4.11223 15.3593 4.36228 15.6094C4.61233 15.8594 4.96547 16 5.33366 16H8.00033C8.36851 16 8.72166 15.8594 8.97171 15.6094C9.22176 15.3593 9.36233 15.0062 9.36233 14.638V12H10.667C11.0352 12 11.3883 11.8594 11.6384 11.6094C11.8884 11.3593 12.029 11.0062 12.029 10.638V9.36199C12.029 8.99381 11.8884 8.64067 11.6384 8.39062C11.3883 8.14057 11.0352 8 10.667 8Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M26.667 8H21.3337C20.9655 8 20.6123 8.14057 20.3623 8.39062C20.1122 8.64067 19.9717 8.99381 19.9717 9.36199V14.638C19.9717 15.0062 20.1122 15.3593 20.3623 15.6094C20.6123 15.8594 20.9655 16 21.3337 16H24.0003C24.3685 16 24.7217 15.8594 24.9717 15.6094C25.2218 15.3593 25.3623 15.0062 25.3623 14.638V12H26.667C27.0352 12 27.3883 11.8594 27.6384 11.6094C27.8884 11.3593 28.029 11.0062 28.029 10.638V9.36199C28.029 8.99381 27.8884 8.64067 27.6384 8.39062C27.3883 8.14057 27.0352 8 26.667 8Z" fill="#4CAF4F" fill-opacity="0.7"/>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                             </svg>
                         </div>
-                        <p class="testimonial-text">"NeuralAutomate transformed our business operations. Their automation solutions saved us countless hours of manual work and significantly reduced errors. The team was professional and delivered beyond our expectations."</p>
-                        <div class="testimonial-author">
-                            <h4>Sarah Johnson</h4>
-                            <p>CEO, TechVision Inc.</p>
-                        </div>
+                        <h3>AI Process Automation</h3>
+                        <p>Transform your business workflows with intelligent automation that learns and adapts to your unique processes.</p>
+                        <ul class="service-features">
+                            <li>Smart workflow optimization</li>
+                            <li>Predictive process analytics</li>
+                            <li>Real-time adaptation</li>
+                            <li>Custom AI model training</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.667 16H5.33366C4.96547 16 4.61233 16.1405 4.36228 16.3905C4.11223 16.6406 3.97166 16.9937 3.97166 17.3619V22.6381C3.97166 23.0063 4.11223 23.3594 4.36228 23.6095C4.61233 23.8595 4.96547 24 5.33366 24H10.667C11.0352 24 11.3883 23.8595 11.6384 23.6095C11.8884 23.3594 12.029 23.0063 12.029 22.6381V17.3619C12.029 16.9937 11.8884 16.6406 11.6384 16.3905C11.3883 16.1405 11.0352 16 10.667 16Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M26.667 16H21.3337C20.9655 16 20.6123 16.1405 20.3623 16.3905C20.1122 16.6406 19.9717 16.9937 19.9717 17.3619V22.6381C19.9717 23.0063 20.1122 23.3594 20.3623 23.6095C20.6123 23.8595 20.9655 24 21.3337 24H26.667C27.0352 24 27.3883 23.8595 27.6384 23.6095C27.8884 23.3594 28.029 23.0063 28.029 22.6381V17.3619C28.029 16.9937 27.8884 16.6406 27.6384 16.3905C27.3883 16.1405 27.0352 16 26.667 16Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M10.667 8H5.33366C4.96547 8 4.61233 8.14057 4.36228 8.39062C4.11223 8.64067 3.97166 8.99381 3.97166 9.36199V14.638C3.97166 15.0062 4.11223 15.3593 4.36228 15.6094C4.61233 15.8594 4.96547 16 5.33366 16H8.00033C8.36851 16 8.72166 15.8594 8.97171 15.6094C9.22176 15.3593 9.36233 15.0062 9.36233 14.638V12H10.667C11.0352 12 11.3883 11.8594 11.6384 11.6094C11.8884 11.3593 12.029 11.0062 12.029 10.638V9.36199C12.029 8.99381 11.8884 8.64067 11.6384 8.39062C11.3883 8.14057 11.0352 8 10.667 8Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M26.667 8H21.3337C20.9655 8 20.6123 8.14057 20.3623 8.39062C20.1122 8.64067 19.9717 8.99381 19.9717 9.36199V14.638C19.9717 15.0062 20.1122 15.3593 20.3623 15.6094C20.6123 15.8594 20.9655 16 21.3337 16H24.0003C24.3685 16 24.7217 15.8594 24.9717 15.6094C25.2218 15.3593 25.3623 15.0062 25.3623 14.638V12H26.667C27.0352 12 27.3883 11.8594 27.6384 11.6094C27.8884 11.3593 28.029 11.0062 28.029 10.638V9.36199C28.029 8.99381 27.8884 8.64067 27.6384 8.39062C27.3883 8.14057 27.0352 8 26.667 8Z" fill="#4CAF4F" fill-opacity="0.7"/>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
                             </svg>
                         </div>
-                        <p class="testimonial-text">"Working with NeuralAutomate was a game-changer for our agency. Their expertise in automation helped us streamline our client onboarding process and reduce our operational costs by 40%. I highly recommend their services."</p>
-                        <div class="testimonial-author">
-                            <h4>Michael Chen</h4>
-                            <p>Director, Digital Marketing Solutions</p>
-                        </div>
+                        <h3>Intelligent Analytics</h3>
+                        <p>Unlock actionable insights from your data with advanced machine learning algorithms and predictive modeling.</p>
+                        <ul class="service-features">
+                            <li>Predictive forecasting</li>
+                            <li>Anomaly detection</li>
+                            <li>Custom dashboards</li>
+                            <li>Real-time monitoring</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-content">
-                        <div class="quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.667 16H5.33366C4.96547 16 4.61233 16.1405 4.36228 16.3905C4.11223 16.6406 3.97166 16.9937 3.97166 17.3619V22.6381C3.97166 23.0063 4.11223 23.3594 4.36228 23.6095C4.61233 23.8595 4.96547 24 5.33366 24H10.667C11.0352 24 11.3883 23.8595 11.6384 23.6095C11.8884 23.3594 12.029 23.0063 12.029 22.6381V17.3619C12.029 16.9937 11.8884 16.6406 11.6384 16.3905C11.3883 16.1405 11.0352 16 10.667 16Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M26.667 16H21.3337C20.9655 16 20.6123 16.1405 20.3623 16.3905C20.1122 16.6406 19.9717 16.9937 19.9717 17.3619V22.6381C19.9717 23.0063 20.1122 23.3594 20.3623 23.6095C20.6123 23.8595 20.9655 24 21.3337 24H26.667C27.0352 24 27.3883 23.8595 27.6384 23.6095C27.8884 23.3594 28.029 23.0063 28.029 22.6381V17.3619C28.029 16.9937 27.8884 16.6406 27.6384 16.3905C27.3883 16.1405 27.0352 16 26.667 16Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M10.667 8H5.33366C4.96547 8 4.61233 8.14057 4.36228 8.39062C4.11223 8.64067 3.97166 8.99381 3.97166 9.36199V14.638C3.97166 15.0062 4.11223 15.3593 4.36228 15.6094C4.61233 15.8594 4.96547 16 5.33366 16H8.00033C8.36851 16 8.72166 15.8594 8.97171 15.6094C9.22176 15.3593 9.36233 15.0062 9.36233 14.638V12H10.667C11.0352 12 11.3883 11.8594 11.6384 11.6094C11.8884 11.3593 12.029 11.0062 12.029 10.638V9.36199C12.029 8.99381 11.8884 8.64067 11.6384 8.39062C11.3883 8.14057 11.0352 8 10.667 8Z" fill="#4CAF4F" fill-opacity="0.7"/>
-                                <path d="M26.667 8H21.3337C20.9655 8 20.6123 8.14057 20.3623 8.39062C20.1122 8.64067 19.9717 8.99381 19.9717 9.36199V14.638C19.9717 15.0062 20.1122 15.3593 20.3623 15.6094C20.6123 15.8594 20.9655 16 21.3337 16H24.0003C24.3685 16 24.7217 15.8594 24.9717 15.6094C25.2218 15.3593 25.3623 15.0062 25.3623 14.638V12H26.667C27.0352 12 27.3883 11.8594 27.6384 11.6094C27.8884 11.3593 28.029 11.0062 28.029 10.638V9.36199C28.029 8.99381 27.8884 8.64067 27.6384 8.39062C27.3883 8.14057 27.0352 8 26.667 8Z" fill="#4CAF4F" fill-opacity="0.7"/>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                             </svg>
                         </div>
-                        <p class="testimonial-text">"The team at NeuralAutomate understood our complex data synchronization needs perfectly. They built a custom automation solution that has improved our reporting accuracy and saved us valuable time. Their ongoing support has been exceptional."</p>
-                        <div class="testimonial-author">
-                            <h4>Emily Rodriguez</h4>
-                            <p>Operations Manager, FinTech Solutions</p>
+                        <h3>Neural Network Solutions</h3>
+                        <p>Custom neural networks designed to solve your specific business challenges with cutting-edge deep learning.</p>
+                        <ul class="service-features">
+                            <li>Custom model architecture</li>
+                            <li>Transfer learning</li>
+                            <li>Edge deployment</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Client Success Stories</div>
+                    <h2>Trusted by <span>Industry Leaders</span></h2>
+                    <p>See how NeuralAutomate is transforming businesses with cutting-edge AI automation solutions.</p>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"NeuralAutomate transformed our entire operation. We've seen a 300% increase in efficiency and saved over $2M in operational costs. The autonomous agents work flawlessly."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Sarah Chen</h4>
+                                    <p>CEO, TechFlow Solutions</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-results">
+                                <span>300% efficiency increase</span>
+                                <span>$2M cost savings</span>
+                                <span>24/7 automation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The AI-powered automation solutions from NeuralAutomate have completely revolutionized our workflow. We've cut processing time by 75% and our team can now focus on strategic initiatives instead of repetitive tasks."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>David Wilson</h4>
+                                    <p>CTO, Innovate Inc.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-results">
+                                <span>75% time savings</span>
+                                <span>Improved accuracy</span>
+                                <span>Scalable solution</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"We were struggling with data silos and manual processes across our 50+ retail locations. NeuralAutomate created a custom solution that unified our systems and automated inventory management. The ROI was evident within just 3 months."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Jennifer Lee</h4>
+                                    <p>Operations Director, Global Retail</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-results">
+                                <span>40% cost reduction</span>
+                                <span>Real-time inventory</span>
+                                <span>3-month ROI</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.06"/></svg>
-    </div>
-
-    <!-- How it Works Section -->
-    <section class="how-it-works">
-        <h2>How our NeuralAutomate consulting service works</h2>
-        <div class="steps-grid">
-            <div class="step-card fade-in">
-                <div class="step-number">1</div>
-                <h3>NeuralAutomate consult</h3>
-                <p>Tell us about your business needs and we'll plan a solution</p>
-            </div>
-            <div class="step-card fade-in">
-                <div class="step-number">2</div>
-                <h3>Workflow mapping</h3>
-                <p>We create a detailed plan of your automation workflow</p>
-            </div>
-            <div class="step-card fade-in">
-                <div class="step-number">3</div>
-                <h3>Error-free builds</h3>
-                <p>We implement and test your automation solution</p>
-            </div>
-            <div class="step-card fade-in">
-                <div class="step-number">4</div>
-                <h3>Ongoing support</h3>
-                <p>We provide continuous support and optimization</p>
-            </div>
-        </div>
-        <a href="mailto:im@neuralautomate.xyz" class="cta-button">Free Consultation</a>
-    </section>
-
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.07"/></svg>
-    </div>
-
-    <!-- About Us Section -->
-    <section class="about-us" id="about">
-        <div class="container">
-            <div class="about-header">
-                <h2>Our Story</h2>
+        <!-- About Us Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Our Story</div>
+                    <h2>Building the Future of <span>Business Automation</span></h2>
+                    <p>Meet the team behind NeuralAutomate and discover our mission to revolutionize business processes through AI-powered automation.</p>
+                </div>
+                
                 <div class="about-content">
-                    <div class="about-text">
-                        <p class="about-intro">NeuralAutomate was born from a simple observation: businesses waste countless hours on repetitive tasks that could be automated.</p>
-                        
+                    <div class="mission">
                         <h3>Our Mission</h3>
-                        <p>We believe that automation isn't just about efficiency—it's about human potential. By eliminating tedious manual processes, we free people to focus on creative work, strategic thinking, and meaningful customer interactions. Our mission is to help businesses scale profitably by implementing intelligent automation solutions that transform operations.</p>
-                        
-                        <h3>Our Approach</h3>
-                        <p>Unlike typical consultants, we don't just provide recommendations and walk away. We roll up our sleeves and build custom automation solutions tailored to your specific needs. We take the time to understand your business processes deeply before crafting solutions that deliver real results.</p>
-                        
-                        <h3>The Team Behind NeuralAutomate</h3>
-                        <p>Our team brings together expertise in process optimization, software development, and business strategy. We're a passionate group of problem-solvers who get excited about finding elegant solutions to complex challenges. Each team member brings unique skills and perspectives, but we share a common goal: helping your business thrive through intelligent automation.</p>
-                        
-                        <div class="about-values">
-                            <div class="value-item fade-in">
-                                <h4>Continuous Innovation</h4>
-                                <p>We constantly explore new technologies and approaches to deliver better results.</p>
-                            </div>
-                            <div class="value-item fade-in">
-                                <h4>Client Partnership</h4>
-                                <p>We view ourselves as an extension of your team, invested in your long-term success.</p>
-                            </div>
-                            <div class="value-item fade-in">
-                                <h4>Measurable Impact</h4>
-                                <p>We focus on delivering solutions with clear, quantifiable business benefits.</p>
-                            </div>
+                        <p>To revolutionize how businesses operate by providing cutting-edge automation solutions that are both powerful and accessible. We believe in making complex problems simple and helping our clients achieve their goals through intelligent automation.</p>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                    
+                    <div class="values">
+                        <div class="value-card">
+                            <h4>Customer First</h4>
+                            <p>We put our customers at the center of everything we do, ensuring their success is our success.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Innovation</h4>
+                            <p>We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Collaboration</h4>
+                            <p>We believe in the power of teamwork and foster an environment of open communication.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Excellence</h4>
+                            <p>We strive for excellence in every project, maintaining the highest standards of quality.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.06"/></svg>
-    </div>
-
-    <!-- Use Cases Section -->
-    <section class="use-cases" id="use-cases">
-        <div class="container">
-            <div class="use-cases-header">
-                <h2>NeuralAutomate for countless use cases</h2>
-                <p class="use-cases-subtitle">Our experts have built hundreds of automation processes for dozens of industries, with millions of automated actions.</p>
-            </div>
-            
-            <div class="use-cases-grid">
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6494144b541fde473a363912_Google%20News.svg" alt="Sales">
-                    </div>
-                    <div class="use-case-content">
+        <!-- Use Cases Section -->
+        <section class="use-cases" id="use-cases">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Use Cases</div>
+                    <h2>NeuralAutomate for <span>countless use cases</span></h2>
+                    <p>Our experts have built hundreds of automation processes for dozens of industries, with millions of automated actions.</p>
+                </div>
+                
+                <div class="use-cases-grid">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
                         <h3>Sales processes</h3>
                         <p>Let's build a sales machine by automating your funnel; email, follow-up, proposals, CRM.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/649417346f6ee562b997b7e5_Book%20Open%20Bookmark.svg" alt="Back Office">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
                         <h3>Back office</h3>
                         <p>HR tasks, payroll, invoicing, ERP, HRIS, accounting, support, documents, compliance.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/649418a2d729c189ebbde068_Send%20Email%20Monitor.svg" alt="Marketing">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                        </div>
                         <h3>Marketing automation</h3>
                         <p>We automate all your marketing processes from lead captures, emails, newsletters, metrics, ads.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6494173423c5269e2fb48efe_Browser%20Page%20Text%201.svg" alt="Onboarding">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="8.5" cy="7" r="4"></circle>
+                                <polyline points="17 11 19 13 23 9"></polyline>
+                            </svg>
+                        </div>
                         <h3>Onboarding</h3>
                         <p>Most client and employee onboarding, training and handoffs can be automated.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64941734ed120d1388e6d570_Social%20Profile%20Click.svg" alt="Project Management">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </div>
                         <h3>Project management</h3>
                         <p>We'll connect every step and tool in your project management flow from intake to finish.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/649417331fc45362ea6c170c_Database.svg" alt="Data">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
                         <h3>Data</h3>
                         <p>We automate data entry, collection, cleansing and reporting from nuanced and silo'd locations.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6494173303fee9257260fa66_Coding%20Apps%20Website%20Monitor%20Image.svg" alt="eCommerce">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
                         <h3>eCommerce</h3>
                         <p>We automate Shopify, inventory, merchandising, reporting, shipping, customer service and more.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/6494173303fee9257260fa33_Building%20Business%20Office.svg" alt="B2B">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
                         <h3>B2B</h3>
                         <p>We have clients in SaaS, services, IT, finance, real estate, medical, supply chain and logistics.</p>
                     </div>
-                </div>
-                <div class="use-case-item fade-in">
-                    <div class="use-case-icon">
-                        <img src="https://cdn.prod.website-files.com/6427c6c769d01c2f58037956/64941732a26a1574635edb50_Shop%201.svg" alt="Agencies">
-                    </div>
-                    <div class="use-case-content">
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
                         <h3>Agencies</h3>
                         <p>Agencies face churn and scale problems due labor-intensive processes—we solve this.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.06"/></svg>
-    </div>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="portfolio-header">
-                <h2 class="portfolio-title">Our Automation Case Studies</h2>
-                <p class="portfolio-subtitle">At NeuralAutomate, we specialize in using Make to streamline and scale your business processes. Below are a few case studies that demonstrate how our automation solutions drive efficiency, reduce manual workload, and boost performance.</p>
-            </div>
-            <div class="projects-container">
-                <!-- Project 1 -->
-                <div class="project-card fade-in">
-                    <h3 class="project-title">Automated Sales Funnel for E-Commerce Brand</h3>
-                    <div class="project-content">
-                        <div class="project-info">
-                            <p class="client-info"><strong>Client:</strong> Confidential E-Commerce Retailer</p>
-                            <div class="project-detail">
-                                <p class="detail-label">Challenge:</p>
-                                <p class="detail-text">The client struggled with manually following up on website leads and missed sales opportunities due to slow response times.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Solution:</p>
-                                <p class="detail-text">We built an automation workflow using Make that integrated the client's website lead capture form with their CRM and email marketing system. The automation automatically scored leads, triggered personalized email sequences, and updated the CRM in real time.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Results:</p>
-                                <p class="detail-text">Achieved a 35% increase in conversion rates and reduced lead response time by 50%, freeing up the sales team to focus on high-value tasks.</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Portfolio</div>
+                    <h2>Our Automation <span>Case Studies</span></h2>
+                    <p>At NeuralAutomate, we specialize in using Make to streamline and scale your business processes. Below are a few case studies that demonstrate how our automation solutions drive efficiency, reduce manual workload, and boost performance.</p>
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card fade-in">
-                    <h3 class="project-title">Streamlined Back Office for a Digital Agency</h3>
-                    <div class="project-content">
-                        <div class="project-info">
-                            <p class="client-info"><strong>Client:</strong> Boutique Digital Marketing Agency</p>
-                            <div class="project-detail">
-                                <p class="detail-label">Challenge:</p>
-                                <p class="detail-text">Manual data entry, invoice generation, and HR processes were causing delays and errors, hindering overall efficiency.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Solution:</p>
-                                <p class="detail-text">Using Make, we automated several back-office functions by integrating the agency's accounting software with its HR and CRM systems. This included automatic invoice creation, employee onboarding workflows, and real-time reporting.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Results:</p>
-                                <p class="detail-text">Reduced manual administrative work by 40% and improved data accuracy, leading to faster payroll processing and enhanced operational transparency.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card fade-in">
-                    <h3 class="project-title">Real-Time Data Synchronization for Financial Reporting</h3>
-                    <div class="project-content">
-                        <div class="project-info">
-                            <p class="client-info"><strong>Client:</strong> Mid-Sized Financial Firm</p>
-                            <div class="project-detail">
-                                <p class="detail-label">Challenge:</p>
-                                <p class="detail-text">The client needed to consolidate data from multiple sources for accurate and timely financial reporting, but manual processes were error-prone and slow.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Solution:</p>
-                                <p class="detail-text">Our team designed an automation solution using Make to extract, clean, and synchronize data from various databases and cloud services. The workflow updated interactive dashboards and generated automated reports.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Results:</p>
-                                <p class="detail-text">Enhanced data accuracy by 30% and cut the reporting cycle time by 60%, empowering faster, data-driven decision-making.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="project-card fade-in">
-                    <h3 class="project-title">Integrated Marketing Automation for a Local Retailer</h3>
-                    <div class="project-content">
-                        <div class="project-info">
-                            <p class="client-info"><strong>Client:</strong> Local Retail Store</p>
-                            <div class="project-detail">
-                                <p class="detail-label">Challenge:</p>
-                                <p class="detail-text">The retailer lacked a cohesive marketing system, resulting in inconsistent customer communications and missed promotional opportunities.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Solution:</p>
-                                <p class="detail-text">We implemented a comprehensive automation workflow using Make that connected their e-commerce platform, social media channels, and email marketing tool. This setup enabled real-time lead nurturing and customer segmentation.</p>
-                            </div>
-                            <div class="project-detail">
-                                <p class="detail-label">Results:</p>
-                                <p class="detail-text">Increased customer engagement by 45% and boosted online sales by 20% through more targeted and timely marketing campaigns.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cta">
-                <a href="#contact" class="cta-button">Get Your Custom Automation Solution Today</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.07"/></svg>
-    </div>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h2>Let our NeuralAutomate consultants get your job done right</h2>
-            <p class="contact-subtitle">Whether you need help with a one-off automation or want to build a complete automated system, we're here to help.</p>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <input type="hidden" name="access_key" value="2fd7fa53-9f5f-43d3-a85b-98f8396ccbd5">
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder=" " required>
-                    <label for="name">Name</label>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/case-study-1.jpg" alt="E-Commerce Automation Case Study">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Automated Sales Funnel for E-Commerce Brand</h3>
+                            <p>The client struggled with manually following up on website leads and missed sales opportunities due to slow response times. We built an automation workflow using Make that integrated the client's website lead capture form with their CRM and email marketing system.</p>
+                            <div class="portfolio-results">
+                                <span>35% increase in conversion rates</span>
+                                <span>50% reduction in lead response time</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/case-study-2.jpg" alt="Digital Agency Automation Case Study">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Streamlined Back Office for a Digital Agency</h3>
+                            <p>Manual data entry, invoice generation, and HR processes were causing delays and errors, hindering overall efficiency. Using Make, we automated several back-office functions by integrating the agency's accounting software with its HR and CRM systems.</p>
+                            <div class="portfolio-results">
+                                <span>40% reduction in manual administrative work</span>
+                                <span>Improved data accuracy and transparency</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="images/case-study-3.jpg" alt="Financial Reporting Automation Case Study">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Real-Time Data Synchronization for Financial Reporting</h3>
+                            <p>The client needed to consolidate data from multiple sources for accurate and timely financial reporting, but manual processes were error-prone and slow. Our team designed an automation solution using Make to extract, clean, and synchronize data from various databases.</p>
+                            <div class="portfolio-results">
+                                <span>30% enhancement in data accuracy</span>
+                                <span>60% reduction in reporting cycle time</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder=" " required>
-                    <label for="email">Email</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
-                    <label for="message">Message</label>
-                </div>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- SVG Wave Divider -->
-    <div class="section-divider">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,120 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9FAFC"/></svg>
-        <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="margin-top:-20px;"><path d="M0,20 C360,60 1080,0 1440,20 L1440,40 L0,40 Z" fill="#4CAF4F" opacity="0.06"/></svg>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>Neural<span>Automate</span></h3>
-                <nav class="footer-nav">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#about">About Us</a>
-                    <a href="#use-cases">Use Cases</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
-                </nav>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 NeuralAutomate. All rights reserved.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Contact</div>
+                    <h2>Let our NeuralAutomate consultants <span>get your job done right</span></h2>
+                    <p>Whether you need help with a one-off automation or want to build a complete automated system, we're here to help.</p>
+                </div>
+                
+                <div class="contact-container">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="2fd7fa53-9f5f-43d3-a85b-98f8396ccbd5">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="credentials">
+                    <div class="credential-badge">
+                        <span>Make Gold Partner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Neural<span>Automate</span></h3>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:im@neuralautomate.xyz">im@neuralautomate.xyz</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 NeuralAutomate. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    <script src="script.js?v=1.0" defer></script>
+
+    <script src="script.js"></script>
 </body>
 </html> 
